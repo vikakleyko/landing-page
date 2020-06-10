@@ -1,0 +1,144 @@
+@import './css/normalize.scss';
+
+// === Mixins ===
+@mixin font-lato {
+    font-family: 'Lato', sans-serif;
+}
+@mixin font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+// === / Mixins ===
+
+$color-white: #ffffff;
+
+* {
+    box-sizing: border-box;
+}
+body {
+    @include font-lato;
+}
+.section-outer{}
+.section-inner {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+// === header === 
+.section-header {
+    color: #ffffff;
+    background: url('../image/startup-594090_1920.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+
+    .section-inner {
+        height: 100vh;
+        z-index: 10;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &::before {
+        z-index: 5;
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba( 20, 39, 51, .6);
+
+    }
+
+    &-logo {
+        font-weight: bold;
+        font-size: 24px;
+        flex-shrink: 1;
+        padding-top: 35px;
+    }
+    &-content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+    &-wrapper {
+        &__title, &__subtitle {
+            text-align: center;
+        }
+        &__title{
+            font-weight: bold;
+            font-size: 56px;
+            line-height: 60px;
+            margin-bottom: 16px;
+        }
+        &__subtitle{
+            @include font-montserrat;
+            font-size: 18px;
+            line-height: 32px;
+            width: 70%;
+            margin: 0 auto 44px;
+
+        }
+        &__form{
+            display: flex;
+              &-input {
+                flex: 1;
+                padding-right: 40px;
+
+                input{
+                    @include font-montserrat;
+                    border: none;
+                    background: rgba(255, 255, 255, .25);
+                    color: $color-white;
+                    font-size: 16px;
+                    margin: 0;
+                    padding: 16px 20px;
+                    border-radius: 4px;
+                    width: 100%;
+    
+                    &::placeholder {
+                        color: $color-white; 
+                    }
+                }
+              }
+                
+            &-button{
+                button {
+                    @include font-montserrat;
+                    font-size: 16px;
+                    margin: 0;
+                    padding: 16px 20px;
+                    border: none;
+                    background: linear-gradient(to right, #fe985b, #fe47af);
+                    border-radius: 4px;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+// === / header === 
+
+// === promo === 
+.section-promo {
+    
+}
+// === / promo ===
+
+// === founder === 
+.section-founder {
+    
+}
+// === / founder ===
+
+// === plans === 
+.section-plans {
+    
+}
+// === / plans ===
+
+// === footer === 
+.section-footer {
+    
+}
+// === / footer ===
