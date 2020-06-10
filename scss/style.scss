@@ -196,7 +196,35 @@ body {
 
 // === founder === 
 .section-founder {
-    
+    background-color: #B5B4B1;
+    padding-top: 34px;
+    .section-inner {
+        display: flex;
+    }
+
+    &__img {
+        align-self: flex-end;
+    }
+    &__content {
+        padding-left: 50px;
+        align-self: center;
+        &-text {
+            @include font-montserrat;
+
+            font-size: 24px;
+            line-height: 40px;
+        }
+        &-name {
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: bold;
+        }
+        &-post {
+            font-size: 20px;
+            line-height: 29px;
+        }
+    }
+
 }
 // === / founder ===
 
