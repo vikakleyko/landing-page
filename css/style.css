@@ -314,6 +314,21 @@ body {
   width: 1180px;
   margin: 0 auto; }
 
+.description-item__icon {
+  margin-bottom: 20px; }
+
+.description-item__title {
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold; }
+
+.description-item__text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #6c6c6c; }
+
 .section-header {
   color: #ffffff;
   background: url("../image/startup-594090_1920.jpg") no-repeat 50% 50%;
@@ -342,7 +357,8 @@ body {
   .section-header-content {
     flex-grow: 1;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .section-header-wrapper__title, .section-header-wrapper__subtitle {
     text-align: center; }
   .section-header-wrapper__title {
@@ -397,17 +413,16 @@ body {
         line-height: 51px;
         font-weight: bold;
         margin-bottom: 56px; }
-      .section-promo .section-promo-1__content .subtitle {
-        font-size: 18px;
-        line-height: 22px;
-        font-weight: bold;
-        margin-top: 30px; }
-      .section-promo .section-promo-1__content .text {
-        font-size: 16px;
-        line-height: 27px;
-        font-weight: 300;
-        color: #6c6c6c;
-        margin-top: 14px; }
+      .section-promo .section-promo-1__content .description-item {
+        margin-top: 28px; }
     .section-promo .section-promo-1__video {
       align-items: center;
       display: flex; }
+  .section-promo .section-promo-2 {
+    display: flex;
+    padding-top: 86px;
+    margin-top: 120px;
+    border-top: 1px solid #e2e2e2;
+    text-align: center; }
+    .section-promo .section-promo-2 .description-item + .description-item {
+      margin-left: 40px; }
