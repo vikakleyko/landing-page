@@ -6,16 +6,16 @@ Landing page built with gulp, SCSS
 To install Node.js
 https://nodejs.org/en/download/
 
-To check version of node run
+To check version of node run: 
 npm --version
 
-To install Gulp run
+To install Gulp run: 
 npm install --global gulp-cli -g
 
 # modules used in project
 
 gulp, gulp-sass, browser-sync
 
-To install modeules run
+To install modeules run: 
 npm install --save-dev gulp gulp-sass browser-sync
 
