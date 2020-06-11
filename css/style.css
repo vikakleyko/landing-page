@@ -329,6 +329,30 @@ body {
   font-weight: 300;
   color: #6c6c6c; }
 
+.btn-main {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 16px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background: linear-gradient(to right, #fe985b, #fe47af);
+  color: #ffffff; }
+
+.btn-secondary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 16px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #414141;
+  background: #ffffff;
+  color: #414141; }
+
 .section-header {
   color: #ffffff;
   background: url("../image/startup-594090_1920.jpg") no-repeat 50% 50%;
@@ -389,15 +413,6 @@ body {
         width: 100%; }
         .section-header-wrapper__form-input input::placeholder {
           color: #ffffff; }
-    .section-header-wrapper__form-button button {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      margin: 0;
-      padding: 16px 20px;
-      border: none;
-      background: linear-gradient(to right, #fe985b, #fe47af);
-      border-radius: 4px;
-      color: #ffffff; }
 
 .section-promo {
   padding-top: 120px;
@@ -448,3 +463,49 @@ body {
     .section-founder__content-post {
       font-size: 20px;
       line-height: 29px; }
+
+.section-plans {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center; }
+  .section-plans__title {
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: bold; }
+  .section-plans__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    margin: 0 auto 80px;
+    width: 50%; }
+  .section-plans__list {
+    display: flex;
+    justify-content: center; }
+    .section-plans__list-item {
+      flex-basis: 370px;
+      text-align: center;
+      padding: 60px 45px; }
+      .section-plans__list-item_title {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 26px; }
+      .section-plans__list-item_price {
+        margin-bottom: 26px; }
+        .section-plans__list-item_price .prefix {
+          font-size: 72px;
+          line-height: 86px;
+          font-weight: bold;
+          color: #fe4fa7; }
+        .section-plans__list-item_price .postfix {
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: bold; }
+      .section-plans__list-item_description {
+        margin-bottom: 50px;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300; }
+      .section-plans__list-item.active {
+        background-color: #f6fafd; }

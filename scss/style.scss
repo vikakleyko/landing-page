@@ -44,6 +44,34 @@ body {
         color: #6c6c6c;
     }
 }
+
+@mixin start-button {
+    @include font-montserrat;
+    font-size: 16px;
+    margin: 0;
+    padding: 16px 20px;
+    
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.btn-main {
+    @include start-button;
+
+    border: none;
+    background: linear-gradient(to right, #fe985b, #fe47af);
+    color: $color-white;
+}
+.btn-secondary {
+    @include start-button;
+
+    border: 1px solid #414141;
+    background: $color-white;
+    color: #414141;
+
+}
+
 // === / Common ===
 
 // === header === 
@@ -125,19 +153,6 @@ body {
                     }
                 }
               }
-                
-            &-button{
-                button {
-                    @include font-montserrat;
-                    font-size: 16px;
-                    margin: 0;
-                    padding: 16px 20px;
-                    border: none;
-                    background: linear-gradient(to right, #fe985b, #fe47af);
-                    border-radius: 4px;
-                    color: $color-white;
-                }
-            }
         }
     }
 }
@@ -230,7 +245,65 @@ body {
 
 // === plans === 
 .section-plans {
-    
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+
+    &__title {
+        font-size: 36px;
+        line-height: 51px;
+        font-weight: bold;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        margin: 0 auto 80px;
+        width: 50%;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        &-item {
+            flex-basis: 370px;
+            text-align: center;
+            padding: 60px 45px;
+            &_title {
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 26px;
+            }
+            &_price {
+                margin-bottom: 26px;
+
+                .prefix{
+                    font-size: 72px;
+                    line-height: 86px;
+                    font-weight: bold;
+                    color: #fe4fa7;
+                }
+                .postfix{
+                    font-size: 14px;
+                    line-height: 17px;
+                    font-weight: bold;
+                }
+            }
+            &_description {
+                margin-bottom: 50px;
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 300;
+            }
+            &_button {}
+
+            &.active {
+                background-color: #f6fafd;
+            }
+        }
+    }
 }
 // === / plans ===
 
