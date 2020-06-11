@@ -1,2 +1,2 @@
-# landing-page
+# descripion
 Landing page built with gulp, SCSS
