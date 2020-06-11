@@ -19,3 +19,11 @@ gulp, gulp-sass, browser-sync
 To install modeules run: 
 npm install --save-dev gulp gulp-sass browser-sync
 
+# crete .css file
+
+Run command: gulp style
+
+# watch for changes if file
+
+Run command: gulp watch
+
