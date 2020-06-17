@@ -12,6 +12,9 @@ npm --version
 To install Gulp run: 
 npm install --global gulp-cli -g
 
+More about Gulp:
+https://gulpjs.com/docs/en/getting-started/quick-start/
+
 ## Modules used in project
 
 gulp, gulp-sass, browser-sync
