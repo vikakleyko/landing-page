@@ -1,4 +1,4 @@
-# Descripion
+## Descripion
 Landing page built with gulp, SCSS
 
 # To get started with gulp
